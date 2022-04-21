@@ -1,0 +1,1 @@
+document.write(' vous avez dans ovtre historique '+history.length+' pages');

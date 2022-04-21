@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mon appli météo en JQuery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='AppliMeteoJquery.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='AppliMeteoJquery.js' async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="AppliMeteoJquery.css">
+</head>
+<body>
+
+    <main>
+        <div class="container-sm fenetre g-5"> 
+            <div class="row">
+                <div class="col">
+        <div id="recherche" >
+                <label>Ville</label>
+                <input type="text" id="inputVille"/>
+                <button id="button">Cherche Lycos</button>
+            </div>
+        </div>
+        <div class="col">
+            </div>
+        </div>
+                   <div id="resultat">
+            <div class="data">
+                            </div>
+        </div>
+    </div>
+        <div id="json"></div>
+    </div>
+</div>
+    </main>
+
+</body>
+
+</html>

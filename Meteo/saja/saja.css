@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+form {
+    background-color: rgb(192, 240, 224);
+    padding: 20px;
+    width: 30%;
+    margin: 0 auto;
+}
+input {
+    margin-top: 20px;
+}
+#weather {
+    background-color: brown;
+    color: white;
+}
