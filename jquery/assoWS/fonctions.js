@@ -1,4 +1,4 @@
-function chargerDonnee(pTexteCherche,pNbRepPerPage,pNbPageCourante,pCallBack)
+function chargerDonnee(pTexteCherche,pNbRepPerPage,pNbPageCourante)
 {
     let url = `https://entreprise.data.gouv.fr/api/rna/v1/full_text/${pTexteCherche}?page=${pNbPageCourante}&per_page=${pNbRepPerPage}`;
     let data='';
@@ -6,6 +6,7 @@ function chargerDonnee(pTexteCherche,pNbRepPerPage,pNbPageCourante,pCallBack)
         function (reponse,result,xHr)
         {
             console.log(reponse);
+            afficherPagination(new Pagination(reponse.page,1,reponse.total_pages,reponse.per_page))
             cleanAssociations();
             reponse.association.forEach(
                 function (assoCourant)

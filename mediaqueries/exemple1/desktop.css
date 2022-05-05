@@ -1,0 +1,29 @@
+.main
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.element
+{
+    background-color: red;
+    width: 25%;
+}
+img
+{
+    width: 100%;
+}
+@media (orientation:portrait)
+{
+    button
+    {
+        background-color: red;
+    }
+}
+@media (orientation:landscape)
+{
+    button
+    {
+        background-color: blue;
+    }
+}
